@@ -1,0 +1,42 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+
+
+# Secrets / env
+.env
+*.env.local
+*.env.*.local
+!.env.example
+
+# Data local
+postgres/
+filestore/
+backups/
+
+# Config con secretos (versiona solo el ejemplo)
+config/odoo.conf
+!config/odoo.conf.example
+
+# Python/Odoo
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Editores
+.idea/
+*.iml
+.vscode/
+
+# SO
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Docker/otros
+acme.json
+*.log
+*~
