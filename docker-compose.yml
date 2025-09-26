@@ -34,7 +34,11 @@ services:
       - odoo18_data:/var/lib/odoo            # ⬅️ usa volumen nombrado para datos/sesiones
       - ./addons:/mnt/extra-addons
       - ./config/odoo.conf:/etc/odoo/odoo.conf:ro
-
+    networks:
+      - npm_internal
+networks:
+  npm_internal:
+    
 volumes:
   pgdata18:
   odoo18_data:
