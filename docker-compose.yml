@@ -30,8 +30,6 @@ services:
       - HOST=db
       - USER=${POSTGRES_USER}
       - PASSWORD=${POSTGRES_PASSWORD}
-    ports:
-      - "8069:8069"
     volumes:
       - odoo18_data:/var/lib/odoo            # ⬅️ usa volumen nombrado para datos/sesiones
       - ./addons:/mnt/extra-addons
