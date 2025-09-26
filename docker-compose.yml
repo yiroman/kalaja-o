@@ -38,7 +38,8 @@ services:
       - npm_internal
 networks:
   npm_internal:
-    
+    external: true
+
 volumes:
   pgdata18:
   odoo18_data:
