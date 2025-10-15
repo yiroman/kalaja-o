@@ -18,7 +18,6 @@ services:
 
   odoo:
     image: odoo:18
-    container_name: odoo18
     restart: unless-stopped
     depends_on:
       db:
